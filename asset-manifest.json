@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://bebusl.github.io/mbti-wine/static/css/main.44118954.chunk.css",
-    "main.js": "https://bebusl.github.io/mbti-wine/static/js/main.8b60ffba.chunk.js",
-    "main.js.map": "https://bebusl.github.io/mbti-wine/static/js/main.8b60ffba.chunk.js.map",
+    "main.css": "https://bebusl.github.io/mbti-wine/static/css/main.42daf6ea.chunk.css",
+    "main.js": "https://bebusl.github.io/mbti-wine/static/js/main.aed30f57.chunk.js",
+    "main.js.map": "https://bebusl.github.io/mbti-wine/static/js/main.aed30f57.chunk.js.map",
     "runtime-main.js": "https://bebusl.github.io/mbti-wine/static/js/runtime-main.2f2c4330.js",
     "runtime-main.js.map": "https://bebusl.github.io/mbti-wine/static/js/runtime-main.2f2c4330.js.map",
     "static/js/2.f6c5775c.chunk.js": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js",
     "static/js/2.f6c5775c.chunk.js.map": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js.map",
     "index.html": "https://bebusl.github.io/mbti-wine/index.html",
-    "static/css/main.44118954.chunk.css.map": "https://bebusl.github.io/mbti-wine/static/css/main.44118954.chunk.css.map",
+    "static/css/main.42daf6ea.chunk.css.map": "https://bebusl.github.io/mbti-wine/static/css/main.42daf6ea.chunk.css.map",
     "static/js/2.f6c5775c.chunk.js.LICENSE.txt": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2f2c4330.js",
     "static/js/2.f6c5775c.chunk.js",
-    "static/css/main.44118954.chunk.css",
-    "static/js/main.8b60ffba.chunk.js"
+    "static/css/main.42daf6ea.chunk.css",
+    "static/js/main.aed30f57.chunk.js"
   ]
 }
