@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "https://bebusl.github.io/mbti-wine/static/css/main.0a3b2727.chunk.css",
-    "main.js": "https://bebusl.github.io/mbti-wine/static/js/main.2c0e7b11.chunk.js",
-    "main.js.map": "https://bebusl.github.io/mbti-wine/static/js/main.2c0e7b11.chunk.js.map",
+    "main.css": "https://bebusl.github.io/mbti-wine/static/css/main.0259910e.chunk.css",
+    "main.js": "https://bebusl.github.io/mbti-wine/static/js/main.da5a0eaf.chunk.js",
+    "main.js.map": "https://bebusl.github.io/mbti-wine/static/js/main.da5a0eaf.chunk.js.map",
     "runtime-main.js": "https://bebusl.github.io/mbti-wine/static/js/runtime-main.2f2c4330.js",
     "runtime-main.js.map": "https://bebusl.github.io/mbti-wine/static/js/runtime-main.2f2c4330.js.map",
-    "static/js/2.633f9449.chunk.js": "https://bebusl.github.io/mbti-wine/static/js/2.633f9449.chunk.js",
-    "static/js/2.633f9449.chunk.js.map": "https://bebusl.github.io/mbti-wine/static/js/2.633f9449.chunk.js.map",
+    "static/js/2.f6c5775c.chunk.js": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js",
+    "static/js/2.f6c5775c.chunk.js.map": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js.map",
     "index.html": "https://bebusl.github.io/mbti-wine/index.html",
-    "static/css/main.0a3b2727.chunk.css.map": "https://bebusl.github.io/mbti-wine/static/css/main.0a3b2727.chunk.css.map",
-    "static/js/2.633f9449.chunk.js.LICENSE.txt": "https://bebusl.github.io/mbti-wine/static/js/2.633f9449.chunk.js.LICENSE.txt"
+    "static/css/main.0259910e.chunk.css.map": "https://bebusl.github.io/mbti-wine/static/css/main.0259910e.chunk.css.map",
+    "static/js/2.f6c5775c.chunk.js.LICENSE.txt": "https://bebusl.github.io/mbti-wine/static/js/2.f6c5775c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2f2c4330.js",
-    "static/js/2.633f9449.chunk.js",
-    "static/css/main.0a3b2727.chunk.css",
-    "static/js/main.2c0e7b11.chunk.js"
+    "static/js/2.f6c5775c.chunk.js",
+    "static/css/main.0259910e.chunk.css",
+    "static/js/main.da5a0eaf.chunk.js"
   ]
 }
