@@ -16,7 +16,9 @@ function Main({ history }) {
       messagingSenderId: "212405074444",
       appId: "1:212405074444:web:537767c363431211b34c29",
     };
-    firebase.initializeApp(firebaseConfig);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
     database = firebase.database();
     database
       .ref("visitor")
@@ -212,7 +214,7 @@ function Main({ history }) {
     <div className={"content-wrapper"}>
       <div className={"content main"}>
         <img
-          src="/img/main_title.jpg"
+          src={`${process.env.PUBLIC_URL}/img/main_title.jpg`}
           style={{ width: "100%" }}
           alt="타이틀 이미지"
           className={`${fadeOut ? "fadeOut" : "fadeInUp"}`}

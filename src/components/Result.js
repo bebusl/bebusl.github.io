@@ -48,14 +48,22 @@ function Result({ location }) {
       {/* 추천와인: {wineList[`${location.state - 1}`]} */}
       <div className={`content fade-in-section ${isVisible && "is-visible"}`}>
         <div className={`titleWrapper`}>
-          <img src={`/img/result/title/001.jpg`} />
+          <img
+            src={`${process.env.PUBLIC_URL}/img/result/title/0${
+              location.state >= 10 ? location.state : "0" + location.state
+            }.jpg`}
+          />
         </div>
         <div
           className={`tastingnoteWrapper fade-in-section ${
             isVisible && "is-visible"
           }`}
         >
-          <img src={`/img/result/tastingnote/001.jpg`} />
+          <img
+            src={`${process.env.PUBLIC_URL}/img/result/tastingnote/0${
+              location.state >= 10 ? location.state : "0" + location.state
+            }.jpg`}
+          />
         </div>
       </div>
     </div>
