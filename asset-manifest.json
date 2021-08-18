@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/mbti-wine/static/css/main.9a08360c.chunk.css",
-    "main.js": "/mbti-wine/static/js/main.1c019c2b.chunk.js",
-    "main.js.map": "/mbti-wine/static/js/main.1c019c2b.chunk.js.map",
-    "runtime-main.js": "/mbti-wine/static/js/runtime-main.6e1cffe0.js",
-    "runtime-main.js.map": "/mbti-wine/static/js/runtime-main.6e1cffe0.js.map",
-    "static/js/2.1d733473.chunk.js": "/mbti-wine/static/js/2.1d733473.chunk.js",
-    "static/js/2.1d733473.chunk.js.map": "/mbti-wine/static/js/2.1d733473.chunk.js.map",
-    "index.html": "/mbti-wine/index.html",
-    "static/css/main.9a08360c.chunk.css.map": "/mbti-wine/static/css/main.9a08360c.chunk.css.map",
-    "static/js/2.1d733473.chunk.js.LICENSE.txt": "/mbti-wine/static/js/2.1d733473.chunk.js.LICENSE.txt"
+    "main.css": "https://bebusl.github.io/mbti-wine/ /static/css/main.9a08360c.chunk.css",
+    "main.js": "https://bebusl.github.io/mbti-wine/ /static/js/main.579ebff1.chunk.js",
+    "main.js.map": "https://bebusl.github.io/mbti-wine/ /static/js/main.579ebff1.chunk.js.map",
+    "runtime-main.js": "https://bebusl.github.io/mbti-wine/ /static/js/runtime-main.f4d4e87b.js",
+    "runtime-main.js.map": "https://bebusl.github.io/mbti-wine/ /static/js/runtime-main.f4d4e87b.js.map",
+    "static/js/2.91057464.chunk.js": "https://bebusl.github.io/mbti-wine/ /static/js/2.91057464.chunk.js",
+    "static/js/2.91057464.chunk.js.map": "https://bebusl.github.io/mbti-wine/ /static/js/2.91057464.chunk.js.map",
+    "index.html": "https://bebusl.github.io/mbti-wine/ /index.html",
+    "static/css/main.9a08360c.chunk.css.map": "https://bebusl.github.io/mbti-wine/ /static/css/main.9a08360c.chunk.css.map",
+    "static/js/2.91057464.chunk.js.LICENSE.txt": "https://bebusl.github.io/mbti-wine/ /static/js/2.91057464.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e1cffe0.js",
-    "static/js/2.1d733473.chunk.js",
+    "static/js/runtime-main.f4d4e87b.js",
+    "static/js/2.91057464.chunk.js",
     "static/css/main.9a08360c.chunk.css",
-    "static/js/main.1c019c2b.chunk.js"
+    "static/js/main.579ebff1.chunk.js"
   ]
 }
