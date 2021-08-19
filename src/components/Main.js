@@ -59,24 +59,24 @@ function Main({ history }) {
       question: "이번 주말에 마실 와인을 고를 때,\n나는",
       answer: [
         {
-          answer: "‘편한게 짱이지’\n인터넷으로 주문한다",
+          answer: "‘편한게 짱!’,\n집에서 핸드폰으로 여유롭게 주문한다",
           type: "I",
         },
         {
-          answer: "‘와인은 직접가서 봐야지’\n마트에 간다",
+          answer: "‘와인은 직접 골라야 제 맛!’,\n와인샵에 간다",
           type: "E",
         },
       ],
     },
     {
-      question: "길 가다 너무 예쁜 와인을 발견했을 때,\n나는",
+      question: "여럿이 있는 자리에서 와인 사진을 찍고 싶을 때, \n나는",
       answer: [
         {
-          answer: "‘오 예쁘네..’\n속으로만 생각한다.",
+          answer: "눈치보다가 한 장 찍지만 그마저도 흔들린다.",
           type: "I",
         },
         {
-          answer: "‘와 뭐야? 진짜 예쁘다’\n크게 말하고, 다가간다.",
+          answer: "‘조금만 기다려~’\n잘 나올 때까지 여러 장 찍는다",
           type: "E",
         },
       ],
@@ -85,11 +85,12 @@ function Main({ history }) {
       question: "와인샵에 방문했을 때,\n나는",
       answer: [
         {
-          answer: "항상 먹던 와인을 고른다.",
+          answer:
+            "‘저번에 그게 맛있었지…’\n둘러보다가 항상 먹던 와인을 고른다.",
           type: "S",
         },
         {
-          answer: "오늘은 새로운 와인을 시도해 본다.",
+          answer: "‘오늘은 이걸 먹어볼까?\n새로운 와인을 시도해 본다.",
           type: "N",
         },
       ],
@@ -98,11 +99,11 @@ function Main({ history }) {
       question: "구매한 와인이 별로일 때,\n나는",
       answer: [
         {
-          answer: "“그래 뭐, 별로일 수 있지…”",
+          answer: "‘그래 뭐, 별로일 수 있지…’",
           type: "S",
         },
         {
-          answer: "“어떻게 이런 와인을 팔 수가 있지?”",
+          answer: "‘어떻게 이런 와인을 팔 수가 있지?’",
           type: "N",
         },
       ],
@@ -111,7 +112,7 @@ function Main({ history }) {
       question: "와인 테이스팅 노트를 적을 때,\n나는",
       answer: [
         {
-          answer: "확실한 가이드라인이 있는 테이스팅 노트를 활용한다.",
+          answer: "확실한 가이드라인이 있는\n테이스팅 노트를 활용한다.",
           type: "S",
         },
         {
@@ -139,11 +140,11 @@ function Main({ history }) {
         "친구가 오늘 기분이 좋아서 비싼 와인을 먹겠다고 말한다.\n나의 반응은?",
       answer: [
         {
-          answer: "“무슨 와인 먹게?”",
+          answer: "‘오~ 비싼 와인? 얼마 짜린데?’",
           type: "T",
         },
         {
-          answer: "“왜 기분이 좋은데??”",
+          answer: "‘오~ 왜 기분이 좋아? 무슨 일인데??’",
           type: "F",
         },
       ],
@@ -165,11 +166,12 @@ function Main({ history }) {
       question: "원래 구매하려고 했던 와인이 보이지 않는다.\n나의 선택은?",
       answer: [
         {
-          answer: "맛있어 보이는 옆의 와인을 집는다.",
+          answer: "옆에 와인도 맛있어 보이네! 이걸로 살까?",
           type: "P",
         },
         {
-          answer: "원래 구매하려던 와인과 비슷한 와인을 다시 검색해본다.",
+          answer:
+            "계획이 틀어져서 짜증이 나지만\n두 번째로 봐두었던 와인을 구매한다",
           type: "J",
         },
       ],
@@ -178,12 +180,11 @@ function Main({ history }) {
       question: "와인을 마시기 전 가장 먼저 할 일은?",
       answer: [
         {
-          answer: "조사고 뭐고 일단 까고 보자!",
+          answer: "와인 정보? 마시면서 알아가는 편",
           type: "P",
         },
         {
-          answer:
-            "와인에 대한 조사부터 해야지.\n이 와인은 프랑스 레드 와인으로.....",
+          answer: "그래도 기본적인 정보는 알고 마시자!",
           type: "J",
         },
       ],
@@ -192,11 +193,12 @@ function Main({ history }) {
       question: "우리집에서 와인 파티 후, 집 청소는?",
       answer: [
         {
-          answer: "더러운 꼴은 못 봐.\n그 날 바로바로",
+          answer:
+            "‘어차피 내일 해야 할 청소,\n오늘 좀 피곤해도 후다닥 해버리자’",
           type: "J",
         },
         {
-          answer: "힘드니까 내일로",
+          answer: "‘일단 오늘은 힘드니까 쉬고,\n내일 천천히 치워야지’",
           type: "P",
         },
       ],

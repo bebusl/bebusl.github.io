@@ -1,48 +1,25 @@
 import { useEffect, useState } from "react";
 
-function Result({ location }) {
+function Result({ location, history }) {
   const [isVisible, setVisible] = useState(false);
+  const cUrl = "https://bebusl.github.io/mbti-wine/#/";
   useEffect(() => {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init("c2ab5dc35f2403c282565ed01b0c145c");
+    }
+    window.Kakao.Link.createScrapButton(
+      {
+        container: "#kakao-link-btn",
+        requestUrl: cUrl,
+      },
+      []
+    );
     setTimeout(() => {
       window.scrollTo(0, 0);
-
       setVisible(true);
-    }, 500);
+    }, 300);
   }, []);
-  // const wineList = [
-  //   "바롱드 보삭 샤르도네",
-  //   "바롱드 보삭 메를로",
-  //   "베를루끼 네이처 브뤼",
-  //   "베를루끼 61 브뤼",
-  //   "베를루끼 네이처 사텐",
-  //   "돈 파스칼",
-  //   "마쏘 안티코 피아노",
-  //   "마쏘 안티코 프리미티보",
-  //   "마쏘 안티코 일뽀떼레",
-  //   "롱 디스턴스",
-  //   "챔피언",
-  //   "니어핀",
-  //   "티오프",
-  //   "초카팔라 틴토",
-  //   "끼안티 클라시크 리저르바",
-  //   "페리퀴타 리저르바",
-  //   "샹 플뢰리 피노누아",
-  //   "캐빗 피노누아",
-  //   "조제 드 쏘자",
-  //   "퀸타 도 틴토",
-  //   "탈레 트레비아노 다부르쪼",
-  //   "떼레 시칠리아네",
-  //   "끌로 라 꾸딸",
-  //   "빠쇼네",
-  //   "까잘 가르시아 스파클링 화이트",
-  //   "까잘 가르시아 스파클링 로제",
-  //   "샤또 모우락",
-  //   "보테가 비나이 피노그리지오",
-  //   "샤또 레 그라브 드 비오드",
-  //   "알램브레 모스카텔 드 세투발",
-  //   "까잘리 델 바로네 150+1",
-  //   "산비질리오 모스카토 돌체",
-  // ];
+
   return (
     <div className={"content-wrapper result"}>
       {/* 추천와인: {wineList[`${location.state - 1}`]} */}
@@ -60,10 +37,88 @@ function Result({ location }) {
           }`}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/img/result/tastingnote/0${
+            src={`${process.env.PUBLIC_URL}/img/result/tastingnote/${location.state}.jpg`}
+          />
+        </div>
+        <div className="content">
+          <a
+            className="answerBtn"
+            style={{ width: "50%", textDecoration: "none" }}
+            href={`${process.env.PUBLIC_URL}/img/result/title/0${
               location.state >= 10 ? location.state : "0" + location.state
             }.jpg`}
-          />
+            download="recommand_wine.jpg"
+          >
+            사진 저장하기
+          </a>
+
+          <div className="shareBtnWrapper">
+            <h5>친구와 테스트 공유하기</h5>
+            <div className="shareBtns">
+              <div
+                className="shareBtn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "http://www.facebook.com/sharer/sharer.php?u=" + cUrl
+                  );
+                }}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/shareIcon/facebook.png`}
+                ></img>
+              </div>
+              <div className="shareBtn" id="kakao-link-btn">
+                <img
+                  src={`${process.env.PUBLIC_URL}/shareIcon/kakaotalk.png`}
+                ></img>
+              </div>
+              <div
+                className="shareBtn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://twitter.com/intent/tweet?text=mbti별와인추천:&url=" +
+                      cUrl
+                  );
+                }}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/shareIcon/twitter.png`}
+                ></img>
+              </div>
+              <div
+                className="shareBtn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  let textarea = document.createElement("textarea");
+                  document.body.appendChild(textarea);
+                  textarea.value = cUrl;
+                  textarea.select();
+                  document.execCommand("copy");
+                  document.body.removeChild(textarea);
+                  window.alert("URL이 복사되었습니다.");
+                }}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/shareIcon/clipboard.png`}
+                ></img>
+              </div>
+            </div>
+          </div>
+          <button
+            className="answerBtn"
+            onClick={(e) => {
+              e.preventDefault();
+              document.documentElement.style.setProperty(
+                "--gauge-value",
+                `${7.7}%`
+              );
+              history.push("/");
+            }}
+          >
+            테스트 다시하기
+          </button>
         </div>
       </div>
     </div>
@@ -71,6 +126,3 @@ function Result({ location }) {
 }
 
 export default Result;
-/*${
-            location.state >= 10 ? location.state : "0" + location.state
-          }*/

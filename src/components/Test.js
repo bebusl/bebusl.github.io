@@ -26,7 +26,7 @@ function Test({ history, location }) {
     setFadeIn(true);
     setTimeout(() => {
       setFadeIn(false);
-    }, 1000);
+    }, 1300);
   }, [presentStep]);
   const analysis = () => {
     let intersection;
@@ -77,7 +77,7 @@ function Test({ history, location }) {
           </h1>
           <p
             className={`${fadeIn && "fadeInLeft"} ${fadeOut && "fadeOut"}`}
-            style={{ textAlign: "center", fontSize: "1rem" }}
+            style={{ textAlign: "center", fontSize: "0.8rem" }}
           >
             {QA[`${presentStep}`].question.split("\n").map((split) => (
               <>
@@ -115,10 +115,17 @@ function Test({ history, location }) {
                           pathname: "/loading",
                           state: analysis(),
                         });
-                  }, 700);
+                  }, 900);
                 }}
               >
-                {answer.answer}
+                <p style={{ fontSize: "0.7rem" }}>
+                  {answer.answer.split("\n").map((split) => (
+                    <>
+                      {split}
+                      <br />
+                    </>
+                  ))}
+                </p>
               </button>
             </div>
           ))}
